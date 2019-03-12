@@ -1,0 +1,39 @@
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.mailTo , .mailSub {
+    height: 20%;
+    border: 1px solid black;
+    text-align: left;
+    display: flex;
+    padding: 7px;
+}
+.To{
+    width: 47%;
+    margin-left: 10px;
+}
+.Subject{
+    width:44.5%;
+    margin-left: 10px;
+}
+.Text{
+    height: 85%;
+    width:100%;
+}
+.message{
+    border: 1px solid black;
+    text-align: left;
+    display: flex;
+    padding: 7px;
+}
+.Send{
+    margin-left: 560px;
+    background-color: red;
+    color:white;
+}
+
+.mailTo td , .mailSub td, .message td {
+    width: 100%;
+}

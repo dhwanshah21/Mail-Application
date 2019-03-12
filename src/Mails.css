@@ -1,0 +1,21 @@
+.mailTable{
+    width : 100%;
+    border-collapse: collapse;
+    cursor: pointer;
+} 
+.row {
+    border : 1px solid black;
+    height: 30px;
+}
+td {
+    padding: 10px;
+    font-size: 18px;
+}
+.delete {
+    margin-top: 5px;
+    margin-right: 0px;
+    float : right;
+    font-style: bold;
+    background-color: red;
+    color:white;
+}

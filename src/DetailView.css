@@ -1,0 +1,16 @@
+.DetailView{
+    width:100%;
+    border-collapse: collapse;  
+}
+tr{
+    height:50px;
+    border: 1px solid black;
+}
+button {
+    margin-top: 10px;
+    margin-right: 0px;
+    float : right;
+    font-style: bold;
+    background-color: blue;
+    color:white;
+  }

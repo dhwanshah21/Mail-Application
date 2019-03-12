@@ -1,26 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Mails from './Mails';
+import Create from './Create';
+import DetailView from './DetailView';
+import { BrowserRouter, Link, Route, Redirect, Switch} from 'react-router-dom';
 
 class App extends Component {
+  constructor() {
+    super() 
+      this.state = {
+        currentEmail: {}
+      };
+  }
+
+  updateEmail(currentEmail) {
+    this.setState({ currentEmail });
+  }
+
   render() {
+    const { currentEmail } = this.state;
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <div className="App">        
+          <div className="heading">
+            <div className="title"><Link to='/mails'>List of Mails</Link></div>
+            <div className="title"><Link to='/Create'>Create Mail</Link></div>
+          </div>              
+          <Redirect from='/' to = '/mails'></Redirect>
+          <div className="body">
+            <Switch>
+              <Route path='/mails' component={() => <Mails updateEmail={(email) => this.updateEmail(email)}/>}/>
+              <Route path='/Create' component={Create} />
+              <Route path='/detail' render={() => <DetailView currentEmail={currentEmail}/>}/>
+            </Switch>
+          </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }
