@@ -13,7 +13,7 @@
 
 ## Understanding the React App :
 
-├── package.json                    ## Node related dependencies and scripts                                                           ├── package-lock.json               
+├── package.json                    # Node related dependencies and scripts                                                           ├── package-lock.json               
 ├── src ├── index.js                # Main root file where App.js file is called
         ├── index.css                   
         ├── App.js                  # Manages all routes and decide which component should be called depending on the path
