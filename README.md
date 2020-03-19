@@ -13,22 +13,22 @@
 
 ## Understanding the React App :
 
-├── package.json                    # Node related dependencies and scripts                                                           ├── package-lock.json               
-├── src ├── index.js                # Main root file where App.js file is called
-        ├── index.css                   
-        ├── App.js                  # Manages all routes and decide which component should be called depending on the path
-        ├── Mails.js                # Get all emails by calling rest get endpoint and display them
-        ├── Create.js               # Gives blank form to fill the details to send it
-        ├── App.css
-        ├── Create.css
-        ├── Mails.css
-        ├── DetailView.js           # Detail view component which gives detail information of an email by clicking on it
-        ├── DetailView.css
-        ├── App.test.js
-        ├── serviceworker.js
-├── public  ├── index.html
-            ├── manifest.json
-├── node-modules
+├── package.json                    # Node related dependencies and scripts <br>                                                            ├── package-lock.json               <br>  
+├── src ├── index.js                # Main root file where App.js file is called<br>  
+        ├── index.css                   <br>  
+        ├── App.js                  # Manages all routes and decide which component should be called depending on the path<br>  
+        ├── Mails.js                # Get all emails by calling rest get endpoint and display them<br>  
+        ├── Create.js               # Gives blank form to fill the details to send it<br>  
+        ├── App.css<br>  
+        ├── Create.css<br>  
+        ├── Mails.css<br>  
+        ├── DetailView.js           # Detail view component which gives detail information of an email by clicking on it<br>  
+        ├── DetailView.css<br>  
+        ├── App.test.js<br>  
+        ├── serviceworker.js<br>  
+├── public  ├── index.html<br>  
+            ├── manifest.json<br>  
+├── node-modules<br>  
 
 ## Technologies and Development Tools Used for the Project :
 
