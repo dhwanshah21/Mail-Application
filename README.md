@@ -4,31 +4,12 @@
 - In order to get the list of emails sent by current user, there is an API call which fetches the data with the help of given link. The data obtained is then rendered on the page with the key values of 'to' and 'subject' of mail. 
 - On clicking on any of the particular email, full email is shown which is having 'To:', 'Subject:' and 'Text:'.
 
-
 ## Getting Started
 
 1. Unzip the solution.
 2. Run `yarn` to install the dependencies.
 3. Run `yarn start` or `npm start` to run the app and go to http://localhost:3000/ to view. I have tested it on chrome browser.
 
-## Understanding the React App :
-
-├── package.json                    # Node related dependencies and scripts <br>                                                            |-- package-lock.json               <br>  
-├── src ├── index.js                # Main root file where App.js file is called<br>  
-        ├── index.css                   <br>  
-        ├── App.js                  # Manages all routes and decide which component should be called depending on the path<br>  
-        ├── Mails.js                # Get all emails by calling rest get endpoint and display them<br>  
-        ├── Create.js               # Gives blank form to fill the details to send it<br>  
-        ├── App.css<br>  
-        ├── Create.css<br>  
-        ├── Mails.css<br>  
-        ├── DetailView.js           # Detail view component which gives detail information of an email by clicking on it<br>  
-        ├── DetailView.css<br>  
-        ├── App.test.js<br>  
-        ├── serviceworker.js<br>  
-├── public  ├── index.html<br>  
-            ├── manifest.json<br>  
-├── node-modules<br>  
 
 ## Technologies and Development Tools Used for the Project :
 
